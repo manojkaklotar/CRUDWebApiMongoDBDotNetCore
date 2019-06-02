@@ -1,0 +1,139 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "version" : "v2",
+    "title" : "CoreApiApp"
+  },
+  "paths" : {
+    "/api/User" : {
+      "get" : {
+        "tags" : [ "User" ],
+        "operationId" : "Get",
+        "consumes" : [ ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ ],
+        "responses" : {
+          "200" : {
+            "description" : "Success",
+            "schema" : {
+              "type" : "array",
+              "items" : {
+                "$ref" : "#/definitions/UserModel"
+              },
+              "uniqueItems" : false
+            }
+          }
+        }
+      },
+      "post" : {
+        "tags" : [ "User" ],
+        "operationId" : "Create",
+        "consumes" : [ "application/json-patch+json", "application/json", "text/json", "application/*+json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "user",
+          "required" : false,
+          "schema" : {
+            "$ref" : "#/definitions/UserModel"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Success",
+            "schema" : {
+              "$ref" : "#/definitions/UserModel"
+            }
+          }
+        }
+      }
+    },
+    "/api/User/{id}" : {
+      "get" : {
+        "tags" : [ "User" ],
+        "operationId" : "Get",
+        "consumes" : [ ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "id",
+          "in" : "path",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Success",
+            "schema" : {
+              "$ref" : "#/definitions/UserModel"
+            }
+          }
+        }
+      },
+      "put" : {
+        "tags" : [ "User" ],
+        "operationId" : "Update",
+        "consumes" : [ "application/json-patch+json", "application/json", "text/json", "application/*+json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "id",
+          "in" : "path",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "in" : "body",
+          "name" : "userIn",
+          "required" : false,
+          "schema" : {
+            "$ref" : "#/definitions/UserModel"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Success"
+          }
+        }
+      },
+      "delete" : {
+        "tags" : [ "User" ],
+        "operationId" : "Delete",
+        "consumes" : [ ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "id",
+          "in" : "path",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Success"
+          }
+        }
+      }
+    }
+  },
+  "definitions" : {
+    "UserModel" : {
+      "type" : "object",
+      "properties": {
+        "userID": {
+          "type": "string"
+        },
+        "firstName": {
+          "type": "string"
+        },
+        "lastName": {
+          "type": "string"
+        },
+        "dob": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "mobile": {
+          "type": "integer",
+          "format": "int32"
+        }
+      }
+    }
+  }
+}
