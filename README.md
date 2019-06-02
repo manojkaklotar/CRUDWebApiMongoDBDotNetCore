@@ -12,6 +12,6 @@ Body:
 Tools
 
 Core 2.2 With API layer/Service layer/Model layer
-Swagger 4.0
+Swagger
 Git 2.2
 Mongo 4.0
