@@ -10,8 +10,7 @@
         "dependencies": {
           "DataModel": "1.0.0",
           "Microsoft.Extensions.Configuration.Abstractions": "2.2.0",
-          "Swashbuckle.AspNetCore.Swagger": "4.0.1",
-          "Microsoft.Extensions.Hosting": "2.2.0.0"
+          "Swashbuckle.AspNetCore.Swagger": "4.0.1"
         },
         "runtime": {
           "Services.dll": {}
@@ -1457,14 +1456,6 @@
         "runtime": {
           "DataModel.dll": {}
         }
-      },
-      "Microsoft.Extensions.Hosting/2.2.0.0": {
-        "runtime": {
-          "Microsoft.Extensions.Hosting.dll": {
-            "assemblyVersion": "2.2.0.0",
-            "fileVersion": "2.2.0.18316"
-          }
-        }
       }
     }
   },
@@ -2351,11 +2342,6 @@
     },
     "DataModel/1.0.0": {
       "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Microsoft.Extensions.Hosting/2.2.0.0": {
-      "type": "reference",
       "serviceable": false,
       "sha512": ""
     }

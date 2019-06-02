@@ -24,5 +24,3 @@ C:\CoreApp\CRUDWebApiMongoDBDotNetCore\WebAPI\CoreApiApp\Services\bin\Debug\netc
 C:\CoreApp\CRUDWebApiMongoDBDotNetCore\WebAPI\CoreApiApp\Services\bin\Debug\netcoreapp2.2\DataModel.dll
 C:\CoreApp\CRUDWebApiMongoDBDotNetCore\WebAPI\CoreApiApp\Services\bin\Debug\netcoreapp2.2\DataModel.pdb
 C:\CoreApp\CRUDWebApiMongoDBDotNetCore\WebAPI\CoreApiApp\Services\obj\Debug\netcoreapp2.2\Services.csproj.CopyComplete
-C:\CoreApp\CRUDWebApiMongoDBDotNetCore\WebAPI\CoreApiApp\Services\bin\Debug\netcoreapp2.2\Microsoft.Extensions.Hosting.dll
-C:\CoreApp\CRUDWebApiMongoDBDotNetCore\WebAPI\CoreApiApp\Services\bin\Debug\netcoreapp2.2\Microsoft.Extensions.Hosting.xml

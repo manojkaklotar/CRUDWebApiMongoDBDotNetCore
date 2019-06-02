@@ -1,12 +1,9 @@
 ﻿using DataModel.Model;
-using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.Hosting.Internal;
 using MongoDB.Driver;
 using Services.Interfaces;
 using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Linq;
 
 namespace Services.Services
